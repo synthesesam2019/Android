@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".PianoKey">
+
+    <Button
+        android:id="@+id/solD"
+        android:layout_width="70dp"
+        android:layout_height="230dp"
+        android:layout_marginStart="802dp"
+        android:layout_marginTop="228dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="casual"
+        android:text="Sol#"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@+id/pianoB"
+        app:layout_constraintHorizontal_bias="0.022"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtOctave" />
+
+    <Button
+        android:id="@+id/laD"
+        android:layout_width="70dp"
+        android:layout_height="230dp"
+        android:layout_marginStart="908dp"
+        android:layout_marginTop="228dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="casual"
+        android:text="La#"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@+id/pianoB"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtOctave" />
+
+    <LinearLayout
+        android:id="@+id/pianoB"
+        android:layout_width="wrap_content"
+        android:layout_height="441dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/touchesNoires"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/doo"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:fontFamily="casual"
+            android:text="Do" />
+
+        <Button
+            android:id="@+id/vide1"
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/re"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/background_light"
+            android:fontFamily="casual"
+            android:text="Ré" />
+
+        <Button
+            android:id="@+id/vide5"
+            android:layout_width="3dp"
+            android:layout_height="500dp"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/mi"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/background_light"
+            android:fontFamily="casual"
+            android:text="Mi" />
+
+        <Button
+            android:id="@+id/vide"
+            android:layout_width="3dp"
+            android:layout_height="500dp"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/fa"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:fontFamily="casual"
+            android:text="Fa" />
+
+        <Button
+            android:id="@+id/vide3"
+            android:layout_width="3dp"
+            android:layout_height="500dp"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="460dp" />
+
+        <Button
+            android:id="@+id/sol"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:fontFamily="casual"
+            android:text="Sol" />
+
+        <Button
+            android:id="@+id/vide6"
+            android:layout_width="3dp"
+            android:layout_height="500dp"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="460dp" />
+
+        <Button
+            android:id="@+id/la"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:fontFamily="casual"
+            android:text="La" />
+
+        <Button
+            android:id="@+id/vide7"
+            android:layout_width="3dp"
+            android:layout_height="500dp"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="460dp" />
+
+        <Button
+            android:id="@+id/si"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:fontFamily="casual"
+            android:text="Si" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nbreOctave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="972dp"
+        android:fontFamily="casual"
+        android:text="1"
+
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bouton_moins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="840dp"
+        android:background="@color/colorAccent"
+        android:fontFamily="casual"
+        android:text="-"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bouton_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="732dp"
+        android:background="@color/colorAccent"
+        android:fontFamily="casual"
+        android:text="+"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtOctave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="casual"
+        android:text="Numéro d'Octave"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/nbreOctave"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/doD"
+        android:layout_width="70dp"
+        android:layout_height="230dp"
+        android:layout_marginStart="450dp"
+        android:layout_marginTop="370dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="casual"
+        android:text="Do#"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/pianoB"
+        app:layout_constraintEnd_toStartOf="@+id/pianoB"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nbreOctave"
+        app:layout_constraintVertical_bias="0.386" />
+
+    <Button
+        android:id="@+id/reD"
+        android:layout_width="70dp"
+        android:layout_height="230dp"
+        android:layout_marginStart="450dp"
+        android:layout_marginTop="370dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="casual"
+        android:text="Re#"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/pianoB"
+        app:layout_constraintEnd_toStartOf="@+id/pianoB"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bouton_moins"
+        app:layout_constraintVertical_bias="0.386" />
+
+    <Button
+        android:id="@+id/faD"
+        android:layout_width="70dp"
+        android:layout_height="230dp"
+        android:layout_marginStart="663dp"
+        android:layout_marginTop="228dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="casual"
+        android:text="Fa#"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@+id/pianoB"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtOctave" />
+
+    <ImageView
+        android:id="@+id/partition"
+        android:layout_width="1254dp"
+        android:layout_height="185dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/doD"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nbreOctave"
+        app:srcCompat="@drawable/partition">
+
+    </ImageView>
+
+    <LinearLayout
+        android:id="@+id/partitionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+</android.support.constraint.ConstraintLayout>
